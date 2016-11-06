@@ -4,8 +4,6 @@
 
 _get links via dom selector_
 
-![get-links](https://github.frapsoft.com/top/get-links.jpg)
-
 ## Project Status
 
 [![Build Status](https://travis-ci.org/ellerbrock/get-links.svg?branch=master)](https://travis-ci.org/ellerbrock/get-links)
@@ -58,12 +56,10 @@ import log from 'get-links'
 // a given site via dom selectors.
 // its very useful to collect data from sites without an api.
 
-import getLinks from '../src/index'
+import getLinks from 'get-links'
 import log from 'console-emoji'
 
-// example
 // get pinned repository links from github
-
 const url = 'https://github.com/ellerbrock'
 const selector = '.pinned-repo-item-content .d-block a'
 
@@ -73,6 +69,10 @@ getLinks(url, selector)
     links.forEach(v => log(`  :link:  ${url}${v}`))
   })
 ```
+
+Output should look like this:  
+
+![get-links](https://github.frapsoft.com/top/get-links.jpg)
 
 ### Contact / Social Media
 
