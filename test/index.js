@@ -23,7 +23,6 @@ describe('Test for npm module get-links', function () {
   //   process.stdout.write = write
   // })
 
-
   it('getLinks should be a function', function () {
     expect(getLinks).to.be.a('function')
   })
