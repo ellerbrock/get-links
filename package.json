@@ -1,6 +1,6 @@
 {
   "name": "get-links",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "get links via dom selector",
   "author": "Maik Ellerbrock",
   "main": "dist/index.js",
