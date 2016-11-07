@@ -4,7 +4,9 @@ import request from 'request-promise-native'
 import cheerio from 'cheerio'
 import log from 'console-emoji'
 
-export default function getLinks (url, selector) {
+export default getLinks
+
+function getLinks (url, selector) {
   if (!url || !selector) {
     log('Missing required parameters! (URL, CSS-Selector)', 'err')
     return false

@@ -8,7 +8,7 @@
 // a given site via dom selectors.
 // its very useful to collect data from sites without an api.
 
-import getLinks from 'get-links'
+import getLinks from '../src/index'
 import log from 'console-emoji'
 
 // get pinned repository links from github
