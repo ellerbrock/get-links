@@ -2,7 +2,7 @@
 
 [![Javascript](https://badges.frapsoft.com/javascript/code/javascript.svg?v=100)](https://github.com/ellerbrock/javascript-badges/) [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/ellerbrock/javascript-badges/) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![Standard Version](https://img.shields.io/badge/release-standard%20version-brightgreen.svg)](https://github.com/conventional-changelog/standard-version) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badges/) [![Gitter Chat](https://badges.gitter.im/frapsoft/frapsoft.svg)](https://gitter.im/frapsoft/frapsoft/)
 
-_get links via dom selector_
+_Get Links via DOM / CSS Selector_
 
 ## Project Status
 
@@ -10,15 +10,11 @@ _get links via dom selector_
 
 ## Overview
 
-Often you want to quick select links from a side which doesn't provide a API.
-For example you want to download all MP3 files from Podcast but normally have
-to click each link manually or something like that.
+**Get Links via DOM / CSS Selector**
 
-This is where get-links comes handy.
-You pass a URL and a DOM Selector and get in return an Array with all
-URL's found for your query.
+Simple like: `getLinks(url, selector)`
 
-A good starting point for further action ...
+## Installation
 
 ### install with npm
 
@@ -33,29 +29,18 @@ A good starting point for further action ...
 #### ES5
 
 ```javascript
-var log = require('get-links')
+var getLinks = require('get-links')
 ```
 
 #### ES6
 
 ```javascript
-import log from 'get-links'
+import getLinks from 'get-links'
 ```
 
 ### Examples
 
 ```javascript
-// github have a api to request information (https://developer.github.com/v3/)
-// this is just an example how to use the npm module.
-// the github frontend may change over time so the example won't work anymore.
-//
-//
-// functionality:
-//
-// the main purpose of this script is to quick collect all links from
-// a given site via dom selectors.
-// its very useful to collect data from sites without an api.
-
 import getLinks from 'get-links'
 import log from 'console-emoji'
 
