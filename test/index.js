@@ -3,25 +3,9 @@ import assert from 'assert'
 import getLinks from '../src/index'
 
 const url = 'https://github.com/ellerbrock'
-const selector = '.pinned-repo-item-content .d-block a'
+const selector = 'a'
 
 describe('Test for npm module get-links', function () {
-
-  // let output
-  // let write
-  //
-  // write = process.stdout.write;
-  //
-  // beforeEach(function() {
-  //   output = ''
-  //   process.stdout.write = function(str) {
-  //     output += str
-  //   }
-  // })
-  //
-  // afterEach(function() {
-  //   process.stdout.write = write
-  // })
 
   it('getLinks should be a function', function () {
     expect(getLinks).to.be.a('function')
